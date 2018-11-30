@@ -1,0 +1,352 @@
+/* Universal Styles */
+
+html {
+    font-family: "Helvetica", sans-serif;
+    font-size: 16px;
+    
+}
+
+body {
+    line-height: 1.4;
+}
+
+/* Header Section */
+
+header {
+    height: 4rem;
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    width: 100%;
+}
+
+ header nav {
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+}
+
+header nav div {
+    display: flex;
+    align-items: center;
+}
+
+header nav div span {
+    font-family: 'Ruda', sans-serif;
+    font-size: 2rem;
+    color: #CDCDCD;
+}
+
+header nav div span strong {
+    font-family: 'Ruda', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    color: black;
+}
+
+header nav li {
+    display: inline;
+    padding: 0 1rem;
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    font-size: 1rem;
+}
+
+/* Banner Section */
+
+.banner {
+    position: relative;
+    top: 5rem;
+    display: flex;
+    flex: row wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
+    background-color: #CDCDCD;
+    padding: 2rem 1.5rem;
+}
+
+.banner img {
+    width: 60%;
+    height: auto;
+}
+
+.banner-txt {
+    width: 40%;
+    text-align: left;
+    padding: 2rem 1.5rem;
+}
+
+.banner-txt h1 {
+    font-family: 'Ruda', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+}
+
+.banner-txt h2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    padding-bottom: 2rem;
+}
+
+.banner-txt button {
+
+    padding: 0.5rem 2rem;
+    background-color: #3E403E;
+    color: white;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 10px;
+    transition: all 1s;
+}
+.banner-txt button:hover {
+    background-color: azure;
+    color: #3E403E;
+}
+
+/* Info Section */
+
+.info {
+    position: relative;
+    top: 5rem;
+    display: flex;
+    padding: 2rem 1.5rem;
+}
+
+.info-left {
+    width: 60%;
+    padding-right: 1.5rem;
+}
+
+.info-left img {
+    width: 100%;
+}
+
+.info-left h2{
+    font-family: 'Ruda', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.info-left p{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    padding: 1rem 0rem;
+}
+
+.info-right {
+    width: 40%;
+    height: auto;
+}
+
+.info-right-top, .info-right-middle, .info-right-bottom {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 1rem 1rem;
+}
+.info-right-top img, .info-right-middle img, .info-right-bottom img{
+    width: 35%;
+    height: 35%;
+}
+
+.info-right-top-txt, .info-right-middle-txt, .info-right-bottom-txt {
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+.info-right-top-txt h3, .info-right-middle-txt h3, .info-right-bottom-txt h3{
+    font-family: 'Ruda', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.info-right-top-txt p, .info-right-middle-txt p, .info-right-bottom-txt p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+}
+.info-right-top-txt span, .info-right-middle-txt span, .info-right-bottom-txt span {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    color: blue;
+}
+.info-right-top, .info-right-middle, .info-right-bottom{
+    background-color:  #CDCDCD;
+    transition: background-color 1s linear .2s;
+}
+.info-right-top:hover, .info-right-middle:hover, .info-right-bottom:hover{
+    background-color:  white;
+}
+
+/* Courses Section */
+
+.courses-section {
+    background-color: #CDCDCD;
+    position: relative;
+    top: 4rem;
+    max-width: 1335px;
+    margin: 0 auto;
+}
+.courses-section h1 {
+    text-align: center;
+    font-family: 'Ruda', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+.courses {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.courses-box {
+    background-color: white;
+    margin: 0.5rem 0.5rem;
+    width: 18rem;
+    height: 22rem;
+}
+
+.courses-box:hover {
+    padding: 0.2% 0.2%;
+    margin: -0.2% -0.2%;
+}
+
+.courses-box img{
+    width: 100%;
+
+}
+
+.courses-box h3 {
+    font-family: 'Ruda', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+}
+
+.courses-box p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    padding: .375rem 1rem;
+}
+
+/* Thesis Section */
+
+.thesis-section{
+    position: relative;
+    top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.thesis-container {
+    display: flex;
+}
+
+.thesis-section h1{
+    text-align: center;
+    font-family: 'Ruda', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+.thesis-left {
+    width: 60%;
+    padding: 0 1.5rem;
+}
+
+.thesis-left video {
+    width: 100%;
+}
+
+.thesis-left h2{
+    font-family: 'Ruda', sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.thesis-left p{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    padding: 1rem 0rem;
+}
+
+.thesis-right {
+    width: 40%;
+    height: auto;
+    padding: 0 1.5rem;
+}
+
+.thesis-right-top, .thesis-right-bottom {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 1rem 1rem;
+}
+.thesis-right-top img, .thesis-right-bottom img{
+    width: 35%;
+    height: 35%;
+}
+
+.thesis-right-top-txt, .thesis-right-bottom-txt {
+    text-align: center;
+    padding: 1rem 1rem;
+}
+
+.thesis-right-top-txt h3, .thesis-right-bottom-txt h3{
+    font-family: 'Ruda', sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.thesis-right-top-txt p, .thesis-right-bottom-txt p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+}
+.thesis-right-top-txt span, .thesis-right-bottom-txt span {
+    font-family: 'Roboto Slab', serif;
+    font-size: 1rem;
+    color: blue;
+}
+.thesis-right-top, .thesis-right-bottom{
+    background-color:  #CDCDCD;
+    transition: background-color 1s linear .2s;
+}
+.thesis-right-top:hover, .thesis-right-bottom:hover{
+    background-color:  white;
+}
+
+/* Footer Section */
+
+footer {
+    position: relative;
+    top: 4rem;
+}
+
+footer nav {
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+}
+
+footer nav div {
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    font-size: 1rem;
+}
+
+footer nav li {
+    display: flex;
+    padding: 0 1rem;
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    font-size: 1rem;
+}
