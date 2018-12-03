@@ -55,6 +55,26 @@ header nav li {
     font-size: 1rem;
 }
 
+.truncated-menu {
+    display: none;
+}
+
+@media only screen and (max-width: 750px) {
+
+    .logo-txt {
+        display: none;
+    }
+    .menu {
+        display: none;
+    }
+    .truncated-menu {
+        display: flex;
+        color: black;
+        max-width: 750px;
+        margin: 0 auto;
+    }
+}
+
 /* Banner Section */
 
 .banner {
@@ -105,9 +125,38 @@ header nav li {
     border-radius: 10px;
     transition: all 1s;
 }
+
 .banner-txt button:hover {
     background-color: azure;
     color: #3E403E;
+}
+
+@media only screen and (max-width: 750px) {
+    .banner {
+        position: relative;
+        top: 5rem;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .banner img {
+        width: 100%;
+    }
+
+    .banner-txt {
+        width: auto;
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .banner-txt h1 {
+        font-size: 1.5rem;
+    }
+
+    .banner-txt h2 {
+        font-size: 1rem;
+    }
 }
 
 /* Info Section */
@@ -145,11 +194,16 @@ header nav li {
     height: auto;
 }
 
+.info-right-top-mobile, .info-right-middle-mobile, .info-right-bottom-mobile{
+    display: none;
+}
+
 .info-right-top, .info-right-middle, .info-right-bottom {
     display: flex;
     flex-flow: row nowrap;
     padding: 1rem 1rem;
 }
+
 .info-right-top img, .info-right-middle img, .info-right-bottom img{
     width: 35%;
     height: 35%;
@@ -170,17 +224,46 @@ header nav li {
     font-family: 'Roboto Slab', serif;
     font-size: 1rem;
 }
+
 .info-right-top-txt span, .info-right-middle-txt span, .info-right-bottom-txt span {
     font-family: 'Roboto Slab', serif;
     font-size: 1rem;
     color: blue;
 }
+
 .info-right-top, .info-right-middle, .info-right-bottom{
     background-color:  #CDCDCD;
     transition: background-color 1s linear .2s;
 }
+
 .info-right-top:hover, .info-right-middle:hover, .info-right-bottom:hover{
     background-color:  white;
+}
+
+@media only screen and (max-width: 750px) {
+    .info-left{
+        display: none;
+    }
+
+    .info-right {
+        width: 100%;
+    }
+
+    .info-right-top, .info-right-middle, .info-right-bottom {
+        display: block;
+    }
+
+    .info-right-top-desktop, .info-right-middle-desktop, .info-right-bottom-desktop {
+        display: none;
+    }
+
+    .info-right-top-mobile, .info-right-middle-mobile, .info-right-bottom-mobile {
+        display: block; 
+    }
+    .info-right-top img, .info-right-middle img, .info-right-bottom img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* Courses Section */
@@ -189,31 +272,44 @@ header nav li {
     background-color: #CDCDCD;
     position: relative;
     top: 4rem;
-    max-width: 1335px;
+    max-width: 100%;
     margin: 0 auto;
 }
+
 .courses-section h1 {
     text-align: center;
     font-family: 'Ruda', sans-serif;
     font-weight: bold;
     font-size: 2rem;
-    padding: 2rem 0;
+    padding: 2rem;
 }
+
 .courses {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.courses-row {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
+
 .courses-box {
-    background-color: white;
-    margin: 0.5rem 0.5rem;
-    width: 18rem;
     height: 22rem;
+    -ms-flex: auto;
+    width: 18rem;
+    min-width: 16rem;
+    margin: 0.5rem;
+    box-sizing: border-box;
+    background-color: white;
+    color: #3E403E;
+    transition: all 1s linear 0.1s; 
 }
 
 .courses-box:hover {
-    padding: 0.2% 0.2%;
-    margin: -0.2% -0.2%;
+    background-color: #3E403E;
+    color: white;
 }
 
 .courses-box img{
@@ -231,7 +327,16 @@ header nav li {
 .courses-box p {
     font-family: 'Roboto Slab', serif;
     font-size: 1rem;
-    padding: .375rem 1rem;
+    padding: 0 1rem;
+}
+@media only screen and (max-width: 750px) {
+    .courses-box img, .courses-box p {
+        display: none;
+    }
+    .courses-box {
+        width: 100%;
+        height: auto;
+    }
 }
 
 /* Thesis Section */
@@ -313,10 +418,23 @@ header nav li {
 }
 .thesis-right-top, .thesis-right-bottom{
     background-color:  #CDCDCD;
-    transition: background-color 1s linear .2s;
+    transition: background-color 1s linear .1s;
 }
 .thesis-right-top:hover, .thesis-right-bottom:hover{
     background-color:  white;
+}
+@media only screen and (max-width: 750px) {
+    .thesis-right {
+        display: none;
+    }
+
+    .thesis-left h2, .thesis-left p {
+        display: none
+    } 
+
+    .thesis-left {
+        width: 100%;
+    }
 }
 
 /* Footer Section */
@@ -330,9 +448,15 @@ footer nav {
     background-color: white;
     color: black;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1rem 1.5rem;
+    justify-content: center;
+    padding: 1rem 1rem;
+}
+
+footer .menu {
+    display: inline;
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    font-size: 1rem;
 }
 
 footer nav div {
@@ -343,10 +467,3 @@ footer nav div {
     font-size: 1rem;
 }
 
-footer nav li {
-    display: flex;
-    padding: 0 1rem;
-    font-family: 'Roboto Slab', serif;
-    color: black;
-    font-size: 1rem;
-}

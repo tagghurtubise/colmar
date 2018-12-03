@@ -16,7 +16,7 @@
     <!--Header Section-->
     <header>
         <nav class="container">
-            <div>
+            <div class="logo-txt">
                 <img src="resources/images/ic-logo.svg" alt="Colmar Logo">
                 <span><strong>COLMAR</strong>ACADEMY</span>
             </div>
@@ -27,8 +27,13 @@
                 <li><a href="">Our Locations</a></li>
                 <li><a href="">Sign In</a></li>
             </ul>
-            <ul class="truncated-menu">
-
+            </div>
+            <div class="truncated-menu">
+            <ul>
+                <li><a href=""><img src="resources/images/ic-logo.svg" alt="Colmar Logo"></a></li>
+                <li><a href=""><img src="resources/images/ic-on-campus.svg" alt="On Campus"></a></li>
+                <li><a href=""><img src="resources/images/ic-online.svg" alt="Colmar Online"></a></li>
+                <li><a href=""><img src="resources/images/ic-login.svg" alt="Colmar Login"></a></li>
             </ul>
             </div>
         </nav>
@@ -55,15 +60,18 @@
         </div>
         <div class="info-right">
             <div class="info-right-top">
-                <img src="resources/images/information-orientation.jpg" alt="Information Orientation Photo">
+                <img class="info-right-top-desktop" src="resources/images/information-orientation.jpg" alt="Information Orientation Photo">
+                <img class="info-right-top-mobile" src="resources/images/information-orientation-mobile.jpg" alt="Information Orientation Photo">
                 <div class="info-right-top-txt">
                     <h3>Orientation Date</h3>
                     <p>Tue 10/11 & Wed 10/12. 8am-3pm</p>
                     <span>Read More</span>
                 </div>
-            </div>    
+            </div>
+               
             <div class="info-right-middle">
-                <img src="resources/images/information-campus.jpg" alt="Information Campus Photo">
+                <img class="info-right-middle-desktop" src="resources/images/information-campus.jpg" alt="Information Campus Photo">
+                <img class="info-right-middle-mobile" src="resources/images/information-campus-mobile.jpg" alt="Information Campus Photo">    
                     <div class="info-right-middle-txt">
                         <h3>Our Locations</h3>
                         <p>Find out which campus is closest to you.</p>
@@ -71,7 +79,8 @@
                     </div>
             </div>
             <div class="info-right-bottom">
-                <img src="resources/images/information-guest-lecture.jpg" alt="Information Guest Lecture Photo">
+                <img class="info-right-bottom-desktop" src="resources/images/information-guest-lecture.jpg" alt="Information Guest Lecture Photo">
+                <img class="info-right-bottom-mobile" src="resources/images/information-guest-lecture-mobile.jpg" alt="Information Guest Lecture Photo">
                     <div class="info-right-bottom-txt">
                         <h3>Our Guest Lecture</h3>
                         <p>Join us for a keynote with Oliver Sack.</p>
@@ -85,41 +94,45 @@
     <div class="courses-section">
         <h1>Start Learning</h1>
     <div class="courses">
-        <div class="courses-box">
-            <img src="resources/images/course-software.jpg" alt="Software Course Photo">
-            <h3>Software Engineering</h3>
-            <p>Courses</p>
-            <p>Web Development, Mobile Development, iOT, APIs</p>
+        <div class="courses-row">
+            <div class="courses-box">
+                <img src="resources/images/course-software.jpg" alt="Software Course Photo">
+                <h3>Software Engineering</h3>
+                <p>Courses</p>
+                <p>Web Development, Mobile Development, iOT, APIs</p>
+            </div>
+            <div class="courses-box">
+                <img src="resources/images/course-computer-art.jpg" alt="Computer Art Course Photo">
+                <h3>Computer Art</h3>
+                <p>Courses</p>
+                <p>Web Design, Motion Graphics and Visual Effects, Computer Animation</p>
+            </div>
+            <div class="courses-box">
+                <img src="resources/images/course-design.jpg" alt="Design Course Photo">
+                <h3>Design</h3>
+                <p>Courses</p>
+                <p>User Experience Design, User Research, Vistual Design</p>
+            </div>
         </div>
-        <div class="courses-box">
-            <img src="resources/images/course-computer-art.jpg" alt="Computer Art Course Photo">
-            <h3>Computer Art</h3>
-            <p>Courses</p>
-            <p>Web Design, Motion Graphics and Visual Effects, Computer Animation</p>
-        </div>
-        <div class="courses-box">
-            <img src="resources/images/course-design.jpg" alt="Design Course Photo">
-            <h3>Design</h3>
-            <p>Courses</p>
-            <p>User Experience Design, User Research, Vistual Design</p>
-        </div>
-        <div class="courses-box">
-            <img src="resources/images/course-data.jpg" alt="Data Course Photo">
-            <h3>Data</h3>
-            <p>Courses</p>
-            <p>Data Science, Big Data, SQL, Data Visualization</p>
-        </div>
-        <div class="courses-box">
-            <img src="resources/images/course-business.jpg" alt="Business Course Photo">
-            <h3>Business</h3>
-            <p>Courses</p>
-            <p>Product Development, Business Development, Startup</p>
-        </div>
-        <div class="courses-box">
-            <img src="resources/images/course-marketing.jpg" alt="Marketing Course Photo">
-            <h3>Marketing</h3>
-            <p>Courses</p>
-            <p>Analytics, Content Marketing, Mobile Marketing</p>
+        <div class="courses-row">
+            <div class="courses-box">
+                <img src="resources/images/course-data.jpg" alt="Data Course Photo">
+                <h3>Data</h3>
+                <p>Courses</p>
+                <p>Data Science, Big Data, SQL, Data Visualization</p>
+            </div>
+            <div class="courses-box">
+                <img src="resources/images/course-business.jpg" alt="Business Course Photo">
+                <h3>Business</h3>
+                <p>Courses</p>
+                <p>Product Development, Business Development, Startup</p>
+            </div>
+            <div class="courses-box">
+                <img src="resources/images/course-marketing.jpg" alt="Marketing Course Photo">
+                <h3>Marketing</h3>
+                <p>Courses</p>
+                <p>Analytics, Content Marketing, Mobile Marketing</p>
+            </div>
         </div>
     </div>
     </div>
@@ -164,13 +177,8 @@
                 <span>&copy 2018 Colmar Academy. All Rights Reserved.</span>
             </div>
             <div class="menu">
-                <ul>
-                    <li><a href="">Terms</a></li>
-                    <li><a href="">Privacy</a></li>
-                </ul>
-                <ul class="truncated-menu">
-    
-                </ul>
+                    <span><a href="">Terms</a</span>
+                    <span><a href="">Privacy</a</span>
             </div>
         </nav>
     </footer>
